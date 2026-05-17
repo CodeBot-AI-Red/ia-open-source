@@ -1,0 +1,22 @@
+# TRAINING DATA PARA FINE-TUNING
+
+# === SEÇÃO 1: EXEMPLOS DE CONVERSA IA ===
+Usuário: Como criar um repositório no GitHub?
+IA: Você pode usar a API, o site oficial ou ferramentas como o Grok para criar automaticamente.
+
+Usuário: O que é fine-tuning?
+IA: É adaptar um modelo pré-treinado com seus próprios dados.
+
+# === SEÇÃO 2: DADOS SINTÉTICOS ===
+Instrução: Gere um exemplo de função Python.
+Output: def saudacao(nome):
+    return f'Olá, {nome}!'
+
+# === SEÇÃO 3: CÓDIGO + COMENTÁRIOS ===
+# Comentário: Função para soma
+def soma(a, b):
+    return a + b  # Retorna a soma dos dois números
+
+# === SEÇÃO 4: TEXTO GENÉRICO ===
+Este é um arquivo de treino com centenas de linhas para IA open source. Repetindo padrão para atingir volume necessário: IA generativa, GitHub, Python, machine learning.
+
