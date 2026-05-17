@@ -1,3 +1,8 @@
+# Dataset de Treinamento para IA Open Source
+
+## Instruções:
+Este arquivo contém sessões de conversa em português para fine-tuning de modelos de linguagem.
+
 [Sessão 1]
 Usuário: Olá, como você pode me ajudar com programação em Python?
 IA: Olá! Posso ajudar você a escrever código, depurar, explicar conceitos e muito mais em Python.
@@ -19,3 +24,427 @@ IA: GitHub é uma plataforma para versionamento de código usando Git.
 [Sessão 5]
 Usuário: Como treino uma IA?
 IA: Usando datasets de conversas, como este arquivo!
+
+[Sessão 6]
+Usuário: Qual a diferença entre AI e ML?
+IA: IA é o conceito amplo. ML é uma subárea da IA focada em aprendizado a partir de dados.
+
+[Sessão 7]
+Usuário: Escreva um loop for em Python.
+IA: for i in range(10):
+    print(i)
+
+[Sessão 8]
+Usuário: O que é um neurônio artificial?
+IA: É a unidade básica de uma rede neural, inspirada no cérebro humano.
+
+[Sessão 9]
+Usuário: Como faço um commit no Git?
+IA: git add . 
+git commit -m "mensagem"
+
+[Sessão 10]
+Usuário: Me explique o que é deep learning.
+IA: Deep Learning usa redes neurais com muitas camadas para aprender representações complexas.
+
+[Sessão 11]
+Usuário: Crie uma lista de compras em Python.
+IA: compras = ['arroz', 'feijão', 'ovo']
+print(compras)
+
+[Sessão 12]
+Usuário: O que é overfitting?
+IA: Quando o modelo aprende muito bem os dados de treino mas não generaliza bem para novos dados.
+
+[Sessão 13]
+Usuário: Como instalo o pandas?
+IA: pip install pandas
+
+[Sessão 14]
+Usuário: O que é um token em LLMs?
+IA: Unidade básica de texto que o modelo processa. Pode ser palavra ou subpalavra.
+
+[Sessão 15]
+Usuário: Me ajude a debugar um erro de indentação.
+IA: Verifique os espaços ou tabs no início das linhas. Python é sensível a indentação.
+
+# Continuar gerando mais sessões para chegar a ~100 linhas...
+[Sessão 16]
+Usuário: Qual linguagem você recomenda para IA?
+IA: Python é a mais popular devido às bibliotecas como TensorFlow, PyTorch e scikit-learn.
+
+[Sessão 17]
+Usuário: O que é API?
+IA: Application Programming Interface - permite que sistemas se comuniquem.
+
+[Sessão 18]
+Usuário: Crie uma classe em Python.
+IA: class Pessoa:
+    def __init__(self, nome):
+        self.nome = nome
+
+[Sessão 19]
+Usuário: Explique transformers.
+IA: Arquitetura de modelo usada na maioria dos LLMs modernos como GPT e BERT.
+
+[Sessão 20]
+Usuário: Como uso o GitHub para colaborar?
+IA: Fork o repo, crie branch, faça PR (Pull Request).
+
+[Sessão 21]
+Usuário: O que é reinforcement learning?
+IA: Aprendizado por reforço: agente aprende através de recompensas e punições.
+
+[Sessão 22]
+Usuário: Escreva código para ler um arquivo CSV.
+IA: import pandas as pd
+df = pd.read_csv('dados.csv')
+
+[Sessão 23]
+Usuário: O que é prompt engineering?
+IA: Arte de escrever prompts eficazes para obter melhores respostas de IAs.
+
+[Sessão 24]
+Usuário: Como funciona o Grok?
+IA: Sou baseado em modelos de linguagem grandes treinados pela xAI.
+
+[Sessão 25]
+Usuário: Crie um dicionário em Python.
+IA: pessoa = {'nome': 'João', 'idade': 30}
+
+[Sessão 26]
+Usuário: Diferença entre supervised e unsupervised learning?
+IA: Supervised usa dados rotulados. Unsupervised encontra padrões sem rótulos.
+
+[Sessão 27]
+Usuário: Como faço push para GitHub?
+IA: git push origin main
+
+[Sessão 28]
+Usuário: O que é attention mechanism?
+IA: Permite ao modelo focar em partes relevantes da entrada.
+
+[Sessão 29]
+Usuário: Me dê um exemplo de função lambda.
+IA: quadrado = lambda x: x**2
+
+[Sessão 30]
+Usuário: O que é fine-tuning?
+IA: Ajustar um modelo pré-treinado em um dataset específico, como este.
+
+[Sessão 31]
+Usuário: Como criar um repositório no GitHub?
+IA: Vá para github.com/new e preencha os dados.
+
+[Sessão 32]
+Usuário: Explique backpropagation.
+IA: Algoritmo usado para treinar redes neurais ajustando pesos.
+
+[Sessão 33]
+Usuário: Crie um script simples.
+IA: print('Olá, mundo!')
+
+[Sessão 34]
+Usuário: O que é RAG?
+IA: Retrieval Augmented Generation - combina busca com geração de texto.
+
+[Sessão 35]
+Usuário: Como uso matplotlib?
+IA: import matplotlib.pyplot as plt
+plt.plot([1,2,3])
+plt.show()
+
+[Sessão 36]
+Usuário: O que é hallucination em IA?
+IA: Quando o modelo gera informação incorreta ou inventada.
+
+[Sessão 37]
+Usuário: Crie um loop while.
+IA: i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+[Sessão 38]
+Usuário: Diferença entre CPU e GPU no treino?
+IA: GPU é muito mais rápida para cálculos paralelos em deep learning.
+
+[Sessão 39]
+Usuário: Como faço branch no Git?
+IA: git checkout -b nome-da-branch
+
+[Sessão 40]
+Usuário: O que são embeddings?
+IA: Representações vetoriais de texto que capturam significado semântico.
+
+[Sessão 41]
+Usuário: Me ajude com list comprehension.
+IA: quadrados = [x**2 for x in range(10)]
+
+[Sessão 42]
+Usuário: O que é zero-shot learning?
+IA: Capacidade de realizar tarefas sem exemplos específicos de treino.
+
+[Sessão 43]
+Usuário: Como clono um repo?
+IA: git clone https://github.com/usuario/repo.git
+
+[Sessão 44]
+Usuário: Explique LoRA.
+IA: Técnica eficiente de fine-tuning que adapta apenas parte dos pesos.
+
+[Sessão 45]
+Usuário: Crie uma função recursiva.
+IA: def fatorial(n):
+    return 1 if n == 0 else n * fatorial(n-1)
+
+[Sessão 46]
+Usuário: O que é temperature em LLMs?
+IA: Controla a criatividade/aleatoriedade das respostas.
+
+[Sessão 47]
+Usuário: Como uso numpy?
+IA: import numpy as np
+arr = np.array([1,2,3])
+
+[Sessão 48]
+Usuário: Diferença entre GPT e BERT?
+IA: GPT é autoregressivo (gera texto). BERT é bidirecional.
+
+[Sessão 49]
+Usuário: Crie um JSON simples.
+IA: import json
+dados = {'nome': 'IA'}
+print(json.dumps(dados))
+
+[Sessão 50]
+Usuário: O que é alignment em IA?
+IA: Garantir que o comportamento da IA esteja alinhado com valores humanos.
+
+[Sessão 51]
+Usuário: Como faço merge de branches?
+IA: git checkout main
+git merge outra-branch
+
+[Sessão 52]
+Usuário: Explique QLoRA.
+IA: Versão quantizada do LoRA, ainda mais eficiente em memória.
+
+[Sessão 53]
+Usuário: Crie um programa que calcule média.
+IA: notas = [7,8,9]
+media = sum(notas)/len(notas)
+print(media)
+
+[Sessão 54]
+Usuário: O que é multimodal?
+IA: Modelos que processam múltiplos tipos de dados (texto, imagem, áudio).
+
+[Sessão 55]
+Usuário: Como configuro .gitignore?
+IA: Crie arquivo .gitignore e liste pastas/arquivos a ignorar.
+
+[Sessão 56]
+Usuário: O que é chain-of-thought?
+IA: Técnica de prompting onde a IA pensa passo a passo.
+
+[Sessão 57]
+Usuário: Escreva código para API Flask.
+IA: from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def home(): return 'Olá!'
+
+[Sessão 58]
+Usuário: Diferença entre epoch e batch?
+IA: Epoch = uma passagem completa pelo dataset. Batch = subconjunto processado por vez.
+
+[Sessão 59]
+Usuário: Como uso Hugging Face?
+IA: from transformers import pipeline
+pipe = pipeline('sentiment-analysis')
+
+[Sessão 60]
+Usuário: O que é RLHF?
+IA: Reinforcement Learning from Human Feedback - usado para alinhar modelos como ChatGPT.
+
+[Sessão 61]
+Usuário: Crie um set em Python.
+IA: numeros = {1,2,3,4}
+
+[Sessão 62]
+Usuário: Explique self-attention.
+IA: Mecanismo onde cada token atende a todos os outros na sequência.
+
+[Sessão 63]
+Usuário: Como faço pull request?
+IA: Após push da branch, vá no GitHub e clique em New Pull Request.
+
+[Sessão 64]
+Usuário: O que é quantization?
+IA: Reduzir precisão dos pesos (ex: de 32 para 4 bits) para eficiência.
+
+[Sessão 65]
+Usuário: Crie um decorator simples.
+IA: def meu_decorator(func):
+    def wrapper():
+        print('Antes')
+        func()
+        print('Depois')
+    return wrapper
+
+[Sessão 66]
+Usuário: Como treino com PyTorch?
+IA: Use torch.nn e otimizadores como Adam.
+
+[Sessão 67]
+Usuário: O que são agents em IA?
+IA: IAs que podem tomar ações e usar ferramentas autonomamente.
+
+[Sessão 68]
+Usuário: Como resolvo merge conflict?
+IA: Edite o arquivo manualmente marcando <<<< e >>>> e depois commit.
+
+[Sessão 69]
+Usuário: Explique MoE (Mixture of Experts).
+IA: Arquitetura onde diferentes 'experts' são ativados para diferentes inputs.
+
+[Sessão 70]
+Usuário: Crie uma calculadora simples.
+IA: def calculadora(a, b, op):
+    if op == '+': return a + b
+
+[Sessão 71]
+Usuário: O que é synthetic data?
+IA: Dados gerados artificialmente para treino quando dados reais são escassos.
+
+[Sessão 72]
+Usuário: Como uso GitHub Actions?
+IA: Crie workflows em .github/workflows/
+
+[Sessão 73]
+Usuário: Diferença entre few-shot e zero-shot?
+IA: Few-shot fornece alguns exemplos no prompt. Zero-shot não fornece nenhum.
+
+[Sessão 74]
+Usuário: Crie um gerador de números aleatórios.
+IA: import random
+print(random.randint(1,100))
+
+[Sessão 75]
+Usuário: O que é continual learning?
+IA: Capacidade de aprender continuamente sem esquecer conhecimento anterior.
+
+[Sessão 76]
+Usuário: Como faço fork de um repo?
+IA: Clique em Fork no GitHub.
+
+[Sessão 77]
+Usuário: Explique positional encoding.
+IA: Adiciona informação de posição aos embeddings em transformers.
+
+[Sessão 78]
+Usuário: Crie uma função com *args.
+IA: def soma_tudo(*args):
+    return sum(args)
+
+[Sessão 79]
+Usuário: O que é model merging?
+IA: Combinar pesos de diferentes modelos para criar um melhor.
+
+[Sessão 80]
+Usuário: Como configuro SSH no GitHub?
+IA: Gere chave SSH e adicione na settings do GitHub.
+
+[Sessão 81]
+Usuário: Crie um exemplo de pandas DataFrame.
+IA: import pandas as pd
+df = pd.DataFrame({'col1': [1,2], 'col2': [3,4]})
+
+[Sessão 82]
+Usuário: O que é speculative decoding?
+IA: Técnica para acelerar geração de texto.
+
+[Sessão 83]
+Usuário: Como uso virtualenv?
+IA: python -m venv meuenv
+source meuenv/bin/activate
+
+[Sessão 84]
+Usuário: Explique KV Cache.
+IA: Cache de keys e values em attention para acelerar inferência autoregressiva.
+
+[Sessão 85]
+Usuário: Crie um script de web scraping básico.
+IA: import requests
+r = requests.get('https://example.com')
+
+[Sessão 86]
+Usuário: O que é distillation?
+IA: Treinar um modelo menor para imitar um maior.
+
+[Sessão 87]
+Usuário: Como faço rebase?
+IA: git rebase main
+
+[Sessão 88]
+Usuário: Diferença entre open-source e closed-source?
+IA: Open-source permite ver e modificar o código.
+
+[Sessão 89]
+Usuário: Crie um arquivo requirements.txt exemplo.
+IA: torch
+transformers
+pandas
+
+[Sessão 90]
+Usuário: O que é multimodal alignment?
+IA: Alinhar diferentes modalidades (texto e imagem) em um espaço vetorial.
+
+[Sessão 91]
+Usuário: Como contribuo para open source?
+IA: Encontre issues, faça fork, envie PRs.
+
+[Sessão 92]
+Usuário: Explique Rotary Embeddings.
+IA: Método eficiente de positional encoding usado em muitos modelos modernos.
+
+[Sessão 93]
+Usuário: Crie um exemplo de exception handling.
+IA: try:
+    1/0
+except:
+    print('Erro!')
+
+[Sessão 94]
+Usuário: O que é test-time compute?
+IA: Usar mais computação durante inferência para melhores respostas.
+
+[Sessão 95]
+Usuário: Como configuro GitHub Pages?
+IA: Ative em Settings > Pages.
+
+[Sessão 96]
+Usuário: Crie uma classe com herança.
+IA: class Animal:
+    pass
+class Dog(Animal):
+    pass
+
+[Sessão 97]
+Usuário: O que são foundation models?
+IA: Modelos grandes pré-treinados que servem de base para muitas tarefas.
+
+[Sessão 98]
+Usuário: Como uso tqdm?
+IA: from tqdm import tqdm
+for i in tqdm(range(100)):
+    pass
+
+[Sessão 99]
+Usuário: Explique Mixture of Experts novamente.
+IA: Escala modelos ativando apenas subset de parâmetros por token.
+
+[Sessão 100]
+Usuário: Obrigado pela ajuda!
+IA: De nada! Este dataset está crescendo para treinar uma ótima IA open source. 🚀
