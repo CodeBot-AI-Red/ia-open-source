@@ -1,15 +1,16 @@
 # api/main.py
 import logging
-import uuid
 from contextlib import asynccontextmanager
 
 import httpx
-from fastapi import FastAPI, Request, status
+from fastapi import Depends, FastAPI, HTTPException, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
 from api.core.config import settings
-from api.middleware.cors import CORSMiddleware  # customizado
+from starlette.middleware.cors import CORSMiddleware
+
+from api.middleware.cors import cors_kwargs
 from api.middleware.logging import LoggingMiddleware
 from api.middleware.rate_limit import RateLimitMiddleware
 from api.middleware.request_id import RequestIDMiddleware  # novo
@@ -21,9 +22,8 @@ from api.routes import (
     text_generation,
     summarization,  # novo
 )
-from api.auth.jwt_handler import verify_jwt
-from api.auth.api_key_manager import verify_api_key
-from api.core.dependencies import AuthDependency  # se existir, ou criar
+from api.auth.jwt_handler import decode_access_token
+from api.auth.api_key_manager import verify_api_key_hash
 
 # ---------------------------------------------------------------------------
 # Logging setup
@@ -95,7 +95,7 @@ app = FastAPI(
 # Middlewares (ordem importa: último adicionado = primeiro executado)
 # ---------------------------------------------------------------------------
 app.add_middleware(RequestIDMiddleware)  # adiciona request_id
-app.add_middleware(CORSMiddleware)       # customizado
+app.add_middleware(CORSMiddleware, **cors_kwargs())
 app.add_middleware(RateLimitMiddleware)
 app.add_middleware(LoggingMiddleware)
 
@@ -108,9 +108,6 @@ async def auth_dependency(request: Request):
     Verifica se a requisição possui um token JWT válido ou uma API Key válida.
     Se a autenticação estiver desabilitada (settings.ENABLE_AUTH=False), passa sem verificação.
     """
-    if not settings.ENABLE_AUTH:
-        return True
-
     auth_header = request.headers.get("Authorization")
     if not auth_header:
         raise HTTPException(
@@ -121,18 +118,13 @@ async def auth_dependency(request: Request):
     # Tenta JWT
     if auth_header.startswith("Bearer "):
         token = auth_header[len("Bearer ") :]
-        if verify_jwt(token):
-            return True
-        else:
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Token JWT inválido ou expirado",
-            )
+        decode_access_token(token)
+        return True
 
     # Tenta API Key (formato: "ApiKey <key>")
     if auth_header.startswith("ApiKey "):
         api_key = auth_header[len("ApiKey ") :]
-        if verify_api_key(api_key):
+        if await verify_api_key_hash(api_key):
             return True
         else:
             raise HTTPException(
@@ -219,6 +211,5 @@ async def root():
     return {
         "service": settings.PROJECT_NAME,
         "version": settings.PROJECT_VERSION,
-        "docs": f"{v1}/docs",
-        "health": f"{v1}/health",
+        "docs": f"{settings.API_V1_STR}/docs",
     }
